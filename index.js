@@ -8,6 +8,9 @@ class Gomni {
     toProp(data){
         return {[this.iden()]: data}
     }
+    toStamp(iden){
+        return iden.substring(iden.indexOf('-'), 0)
+    }
     toData(data){
         data[this.id] = this.iden()
         return data
