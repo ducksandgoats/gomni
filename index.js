@@ -2,6 +2,9 @@ class Gomni {
     constructor(opts = {}){
         this.id = opts.id ? opts.id : 'id'
     }
+    rand(){
+        return Math.random().toString(36).substring(2)
+    }
     iden(){
         return Date.now() + '-' + Math.random().toString(36).substring(2)
     }
