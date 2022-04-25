@@ -3,7 +3,7 @@ class Gomni {
         this.id = opts.id ? opts.id : 'id'
     }
     iden(){
-        return Date.now() + Math.random().toString(36).substring(2)
+        return Date.now() + '-' + Math.random().toString(36).substring(2)
     }
     toProp(data){
         return {[this.iden()]: data}
