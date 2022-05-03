@@ -8,6 +8,9 @@ class Gomni {
     iden(){
         return Date.now() + '-' + Math.random().toString(36).substring(2)
     }
+    idenFromStamp(stamp){
+        return stamp + '-' + Math.random().toString(36).substring(2)
+    }
     toProp(data){
         return {[this.iden()]: data}
     }
